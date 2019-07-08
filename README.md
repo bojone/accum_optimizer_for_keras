@@ -1,4 +1,4 @@
-[<a href="https://github.com/bojone/accum_optimizer_for_keras/blob/master/README.md">中文</a>|<a href="https://github.com/bojone/accum_optimizer_for_keras/blob/master/README_en.md">中文</a>]
+[<a href="https://github.com/bojone/accum_optimizer_for_keras/blob/master/README.md">中文</a>|<a href="https://github.com/bojone/accum_optimizer_for_keras/blob/master/README_en.md">English</a>]
 
 # 为Keras实现梯度累积版优化器
 
