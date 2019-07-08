@@ -8,7 +8,7 @@
 
 ## 用法
 
-如下例子等价于直接使用batch_size=100的Adam优化器：
+如下例子等价于直接使用batch_size=100的Adam优化器（代价就是你跑了10个epoch，实际上只相当于batch_size=100跑了1个epoch）：
 ```
 opt = AccumOptimizer(Adam(), 10) # 10是累积步数
 model.compile(loss='mse', optimizer=opt)
