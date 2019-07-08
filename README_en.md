@@ -8,7 +8,7 @@ Inheriting Optimizer class, wrapping the original optimizer to achieve a new cor
 
 ## Usage
 
-The following example equals to use original Adam optimizer with batch_size=100:
+The following example equals to use original Adam optimizer with batch_size=100 (but the cost is that you run 10 epoch under batch_size=10, which is actually equivalent to 1 epoch under batch_size=100):
 ```
 opt = AccumOptimizer(Adam(), 10) # 10 is accumulative steps
 model.compile(loss='mse', optimizer=opt)
