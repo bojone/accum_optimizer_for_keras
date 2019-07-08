@@ -17,5 +17,4 @@ model.fit(x_train, y_train, epochs=10, batch_size=10)
 Or you can try<a href="https://github.com/bojone/accum_optimizer_for_keras/blob/master/mnist_mlp_example.py">mnist_mlp_example.py</a> directly.
 
 ## Link
-https://kexue.fm
-
+https://kexue.fm/archives/6794
