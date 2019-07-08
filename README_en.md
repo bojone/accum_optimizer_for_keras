@@ -1,21 +1,21 @@
 [<a href="https://github.com/bojone/accum_optimizer_for_keras/blob/master/README.md">中文</a>|<a href="https://github.com/bojone/accum_optimizer_for_keras/blob/master/README_en.md">English</a>]
 
-# 为Keras实现梯度累积版优化器
+# Keras Optimizer with Gradient Accumulation
 
-## 特点
+## Feature
 
-继承Optimizer类，包装原有优化器，实现梯度累积功能。能够无缝对接原有优化器，不需要重写优化器。
+Inheriting Optimizer class, wrapping the original optimizer to achieve a new corresponding optimizer of gradient accumulation.
 
-## 用法
+## Usage
 
-如下例子等价于直接使用batch_size=100的Adam优化器：
+The following example equals to use original Adam optimizer with batch_size=100:
 ```
-opt = AccumOptimizer(Adam(), 10) # 10是累积步数
+opt = AccumOptimizer(Adam(), 10) # 10 is accumulative steps
 model.compile(loss='mse', optimizer=opt)
 model.fit(x_train, y_train, epochs=10, batch_size=10)
 ```
-读者也可以直接跑一跑<a href="https://github.com/bojone/accum_optimizer_for_keras/blob/master/mnist_mlp_example.py">mnist_mlp_example.py</a>。
+Or you can try<a href="https://github.com/bojone/accum_optimizer_for_keras/blob/master/mnist_mlp_example.py">mnist_mlp_example.py</a> directly.
 
-## 链接
+## Link
 https://kexue.fm
 
