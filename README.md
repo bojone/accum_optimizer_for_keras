@@ -9,7 +9,8 @@
 ## 用法
 
 如下例子等价于直接使用batch_size=100的Adam优化器：
-```opt = AccumOptimizer(Adam(), 10) # 10是累积步数
+```
+opt = AccumOptimizer(Adam(), 10) # 10是累积步数
 model.compile(loss='mse', optimizer=opt)
 model.fit(x_train, y_train, epochs=10, batch_size=10)
 ```
