@@ -18,3 +18,6 @@ model.fit(x_train, y_train, epochs=10, batch_size=10)
 
 ## 链接
 https://kexue.fm/archives/6794
+
+## 交流
+QQ交流群：67729435，微信群请加机器人微信号spaces_ac_cn
