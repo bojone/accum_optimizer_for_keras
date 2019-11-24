@@ -52,7 +52,7 @@ class AccumOptimizer(Optimizer):
         self.accum_grads = [K.zeros(K.int_shape(p), dtype=K.dtype(p)) for p in params]
         grads = self.get_gradients(loss, params)
         for g, ag in zip(grads, self.accum_grads):
-            self.updates.append(K.update(ag, K.switch(self.cond, ag * 0, ag + g)))
+            self.updates.append(K.update(ag, K.switch(self.cond, g, ag + g)))
         # 继承optimizer的更新 (inheriting updates of original optimizer)
         self.updates.extend(self.optimizer.get_updates(loss, params)[1:])
         self.weights.extend(self.optimizer.weights)
